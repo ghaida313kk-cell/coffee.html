@@ -1,0 +1,332 @@
+
+/* Genel stil */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f3ee;
+    color: #5c3d2e;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #5c3d2e;
+}
+header .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+header nav a {
+    margin-left: 12px;
+    text-decoration: none;
+    color: #5c3d2e;
+    padding: 6px 10px;
+    transition: .25s;
+}
+header nav a:hover {
+    color: #c9a78a;
+}
+.sepet span {
+    font-weight: bold;
+}
+
+/* Login & Register */
+.login-container, .register-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.login-card, .register-card {
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.login-card:hover, .register-card:hover {
+    transform: translateY(-5px);
+}
+.login-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.login-form, .register-form {
+    flex: 1;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-form h2, .register-form h2 {
+    margin-bottom: 30px;
+    color: #5c3d2e;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+.login-form input, .register-form input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.login-form input:focus, .register-form input:focus {
+    border-color: #c9a78a;
+    box-shadow: 0 0 8px rgba(201,167,138,0.3);
+    outline: none;
+}
+.btn-dark {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 12px;
+    background: #5c3d2e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-dark:hover {
+    background: #c9a78a;
+    color: #fff;
+}
+.text-small {
+    text-align: center;
+    margin-top: 15px;
+    color: #5c3d2e;
+    font-size: 14px;
+}
+.signup-btn, .login-btn {
+    color: #c9a78a;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Cart */
+.cart-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+#cart-container .cart-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+#cart-container img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.cart-total {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+}
+#checkoutBtn {
+    float: right;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #5c3d2e;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#checkoutBtn:hover {
+    background: #c9a78a;
+    color: #fff;
+}
+#emptyMsg {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #c9a78a;
+}
+
+/* Products */
+.search-area {
+    text-align: center;
+    margin: 20px 0;
+}
+.search-area input {
+    width: 50%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.category-filter {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.category-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #5c3d2e;
+    color: #fff;
+    transition: 0.3s;
+}
+.category-btn:hover {
+    background: #c9a78a;
+    color: #fff;
+}
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.product-card {
+    width: 220px;
+    perspective: 1000px;
+}
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.product-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.card-front {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.card-front img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.card-front h3 {
+    margin: 10px 0 5px;
+    color: #5c3d2e;
+    text-align: center;
+}
+.card-front p {
+    color: #c9a78a;
+    font-weight: bold;
+}
+.card-back {
+    background: #5c3d2e;
+    color: #fff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.card-back p {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.card-back button {
+    background: #c9a78a;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.card-back button:hover {
+    background: #fff;
+    color: #5c3d2e;
+}
+
+/* Payment */
+.payment-box {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.payment-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5c3d2e;
+}
+.payment-box input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.payment-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #5c3d2e;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.payment-box button:hover {
+    background: #c9a78a;
+    color: #fff;
+}
