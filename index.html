@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Ghaida</title>
+
+  <!-- Lucide icons (for cart icon) -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="logo-container">
+      <img src="images/ghaida logo.jpg" alt="Logo" class="logo-image" />
+      <div class="logo-text"><h6>Coffee Ghaida</h6></div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#home" class="nav-link">Ana Sayfa</a>
+      <a href="#about" class="nav-link">Hakkımızda</a>
+      <a href="#blog" class="nav-link">Blog</a>
+      <a href="#features" class="nav-link">Özellikler</a>
+      <a href="#reviews" class="nav-link">Yorumlar</a>
+      <a href="#İletişim"class="nav-link">İletişim</a>
+      <!-- Ürünler -->
+      <a href="urunler.html" class="nav-link">Ürünler</a>
+
+      <!-- Cart button -->
+      <a href="cart.html" class="sepet" id="sepetLink" title="Sepet">
+        <i data-lucide="shopping-basket"></i>
+        <span id="cart-count">0</span>
+      </a>
+    </nav>
+
+    <!-- Login / Signup -->
+     <div class="login-signup">
+      <a href="login.html" class="btn-dark login-btn">Giriş Yap</a>
+      <a href="register.html" class="btn-dark signup-btn">Kayıt Ol</a>
+    </div>
+  </header>
+    
+  <!-- HERO / Home -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h4>Kahve Mağazası</h4>
+
+      <!-- typing effect container -->
+      <h1>
+        <span id="typed-text">Organik Coffee Ghaida</span>
+        <span class="cursor">|</span>
+      </h1>
+
+      <p class="hero-sub">Yoğun kakao aromalı özel karışımımız ile benzersiz bir kahve keyfi yaşayın.</p>
+
+      
+
+      <div class="hero-buttons">
+        <button class="btn-dark" id="signupBtn">Kayıt Ol</button>
+      
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/coffee ghaida.png" alt="Kahve Ürünleri" />
+    </div>
+  </section>
+
+  <!-- Internal sections -->
+  
+  <section id="about" class="Hakkımızda-section">
+  <div class="Hakkımızda-container">
+
+    <!-- صورة على اليسار -->
+    <div class="side-image left">
+      <img src="images/ghiada hakkımda.jpg" alt="Coffee Left">
+    </div>
+
+    <!-- النص في الوسط -->
+    <div class="hakkimizda-text fade-in">
+      
+      <p>
+        Coffee Ghaida,
+         2019 yılında kurulmuş ve kahve dünyasında eşsiz bir deneyim sunmayı amaçlayan bir markadır. 
+        Her kahve çekirdeği özenle seçilir, kavrulur ve müşterilerimize en kaliteli aromayı sunmak için hazırlanır.
+      </p><br>
+      <p>
+        Misyonumuz sadece kahve sunmak değil, aynı zamanda kahve kültürünü yaymak ve her ziyaretçimize sıcak bir deneyim yaşatmaktır. 
+        Ekibimiz, uzman baristalardan oluşur ve her yeni tarif ile kahve lezzet sınırlarını genişletir.
+      </p><br>
+      <p>
+        Coffee Ghaida, geleneksel tatları modern kahve anlayışı ile birleştirerek, müşterilerine sürekli yenilikçi ve kaliteli ürünler sunar.
+      </p><br>
+      <p><strong>Kuruluş Yılı:</strong> 2019</p>
+
+      <!-- أيقونات تابعونا -->
+      <div class="follow-icons">
+        <a href="https://www.instagram.com/coffee_ghaida" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@coffee_ghaida" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+
+   
+    
+  </div>
+</section>
+
+    
+<section id="blog" class="internal-section featured-coffee">
+
+  <div class="section-header">
+    
+  </div>
+
+  <!-- Filtreleme -->
+  <div class="filter-menu">
+    <button data-filter="all" class="active">Hepsi</button>
+    <button data-filter="video">Video</button>
+    <button data-filter="ipucu">İpucu</button>
+  </div>
+
+  <!-- Kahve Kartları -->
+  <div class="coffee-grid">
+
+    <div class="coffee-card" data-category="video" style="background:#1a1a1a; color:#FFD700;">
+      <div class="media-wrapper">
+        <video autoplay muted loop>
+          <source src="images/kakule.mp4" type="video/mp4">
+        </video>
+        <div class="play-icon">▶</div>
+      </div>
+      <div class="coffee-info">
+        <h3>kakule coffee</h3>
+        <p>Kakuleli kahve, hem modern kahve severlerin hem de geleneksel tatlardan vazgeçmeyenlerin beğendiği;
+           zengin, aromatik ve benzersiz bir içim sunar.
+          </p>
+      </div>
+    </div>
+
+    <div class="coffee-card" data-category="video" style="background:#aee3f7; color:#333;">
+      <div class="media-wrapper">
+        <video autoplay muted loop>
+          <source src="images/Kyoto coffee tour_ 京都咖啡之旅.mp4" type="video/mp4">
+        </video>
+        <div class="play-icon">▶</div>
+      </div>
+      <div class="coffee-info">
+        <h3>Kyoto Cold Brew</h3>
+        <p>Soğuk, yumuşak ve temiz tatlı bir kahve deneyimi.</p>
+      </div>
+    </div>
+
+    <div class="coffee-card" data-category="video" style="background:#f5e5c3; color:#5c3d2e;">
+      <div class="media-wrapper">
+        <video autoplay muted loop>
+          <source src="images/Einspänner _ Vienna Coffee Nasıl Yapılır_.mp4" type="video/mp4">
+        </video>
+        <div class="play-icon">▶</div>
+      </div>
+      <div class="coffee-info">
+        <h3>Vienna Coffee</h3>
+        <p>Üstünde krema ile tatlı ve hafif bir kahve.</p>
+      </div>
+    </div>
+
+    <div class="coffee-card" data-category="ipucu" style="background:#ffd59e; color:#5c3d2e;">
+      <div class="tip-box">
+        <div class="tip-icon">💡</div>
+        <p class="tip-text">Espresso için suyun sıcaklığı 92–94°C olmalıdır.</p>
+        <button class="new-tip">Yeni İpucu</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  
+
+
+<section id="features" class="internal-section">
+
+
+  <div class="feature-new">
+    <div class="feat-card">
+      <i class="icon" data-lucide="coffee"></i>
+      <h4>Organik Çekirdekler</h4>
+      <p>Doğal ve sağlıklı kahve çekirdeklerinden özel üretim.</p>
+    </div>
+
+    <div class="feat-card">
+      <i class="icon" data-lucide="truck"></i>
+      <h4>Hızlı Teslimat</h4>
+      <p>Türkiye genelinde 24 saat içinde teslimat.</p>
+    </div>
+
+    <div class="feat-card">
+      <i class="icon" data-lucide="sparkles"></i>
+      <h4>Özel Aromalar</h4>
+      <p>Kakao uyumu ile hazırlanan benzersiz tat profili.</p>
+    </div>
+
+    <div class="feat-card">
+      <i class="icon" data-lucide="headphones"></i>
+      <h4>7/24 Destek</h4>
+      <p>Her zaman yanınızdayız.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="reviews" class="internal-section">
+
+  <div class="review-slider">
+    <div class="slider-track">
+
+      <div class="review-card">
+        <img src="images/ahmet.jpg" />
+        <h4>Ahmet Yılmaz</h4>
+        <span>⭐⭐⭐⭐⭐</span>
+        <p>Kahve aroması inanılmaz hoş, çok beğendim.</p>
+      </div>
+
+      <div class="review-card">
+        <img src="images/zeynep.jpg" />
+        <h4>Zeynep Kurt</h4>
+        <span>⭐⭐⭐⭐⭐</span>
+        <p>Ambalaj harika, teslimat hızlı. Bayıldım!</p>
+      </div>
+
+      <div class="review-card">
+        <img src="images/mert.jpg" />
+        <h4>Mert Karakuş</h4>
+        <span>⭐⭐⭐⭐</span>
+        <p>Lezzeti doğal ve yumuşak içimli. Tavsiye ederim.</p>
+      </div>
+
+      <div class="review-card">
+        <img src="images/munira.jpg" />
+        <h4>Munira Tan</h4>
+        <span>⭐⭐⭐⭐⭐</span>
+        <p>Kakao aroması gerçekten çok etkileyici.</p>
+      </div>
+
+      <!-- Aynı kartları tekrar koyuyoruz ki slider sonsuz dönsün -->
+      <div class="review-card">
+        <img src="images/Muhammed.jpg" />
+        <h4>Muhammed nur</h4>
+        <span>⭐⭐⭐⭐⭐</span>
+        <p>Kahve aroması inanılmaz hoş, çok beğendim.</p>
+      </div>
+
+      <div class="review-card">
+        <img src="images/Meltem.jpg" />
+        <h4>Meltem Deniz</h4>
+        <span>⭐⭐⭐⭐⭐</span>
+        <p>Ambalaj harika, teslimat hızlı. Bayıldım!</p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+  <section id="İletişim" class="internal-section">
+  
+
+  <div class="contact-wrapper">
+    <form class="contact-form">
+      <input type="text" placeholder="Adınız">
+      <input type="email" placeholder="E-posta">
+      <textarea placeholder="Mesajınız"></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+
+    <iframe class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18..."
+      loading="lazy"></iframe>
+  </div>
+</section>
+  <footer class="footer">
+    <p>© <span id="year"></span> Coffee Ghaida — Tüm hakları saklıdır.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js" defer></script>
+  <script>
+    // زر Kayıt Ol يفتح صفحة register.html
+    const signupBtn = document.getElementById('signupBtn');
+    if (signupBtn) {
+      signupBtn.addEventListener('click', () => {
+        window.location.href = 'register.html';
+      });
+    }
+
+    // تحديث السنة تلقائياً في الفوتر
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
